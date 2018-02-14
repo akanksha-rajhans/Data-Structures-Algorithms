@@ -53,7 +53,7 @@ public class MaxBinaryHeap {
 			max=i;
 		r=rightChild(i);
 		if(r!=-1 && this.arr[r]>this.arr[max])
-			max=i;
+			max=r;
 		
 		if(max!=i){
 			temp=this.arr[i];

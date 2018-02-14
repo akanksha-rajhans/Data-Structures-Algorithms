@@ -72,7 +72,7 @@ public class MinBinaryHeap {
 			return;
 		this.count++;
 		int i=this.count-1;
-		while(i<=0 && data<this.arr[(i-1)/2]){
+		while(i>=0 && data<this.arr[(i-1)/2]){
 			this.arr[i]=this.arr[(i-1)/2];
 			i=(i-1)/2;
 		}
@@ -89,6 +89,7 @@ public class MinBinaryHeap {
 			return;
 		for(int i=0; i<A.length; i++)
 			h.arr[i]=A[i];
+		h.count=A.length;
 		for(int i=(A.length-1)/2; i>=0; i--){
 			h.percolateUp(i);
 		}
