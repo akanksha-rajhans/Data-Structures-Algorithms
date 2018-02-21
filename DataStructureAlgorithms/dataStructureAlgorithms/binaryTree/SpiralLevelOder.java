@@ -16,7 +16,9 @@ public class SpiralLevelOder extends BinaryTree{
 					st2.push(temp.left);
 				if(temp.right!=null)
 					st2.push(temp.right);
+				System.out.println();
 			}
+			
 			while(!st2.isEmpty()){
 				Node temp=st2.pop();
 				System.out.print(temp.data+" ");

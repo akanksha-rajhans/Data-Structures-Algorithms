@@ -27,12 +27,13 @@ public class DeleteNodesWithGreaterValueOnRight extends LinkedList{
 	}
 
 	public static void main(String[] args) {
-		LinkedList.insertIntoList(60);
-		LinkedList.insertIntoList(50);
-		LinkedList.insertIntoList(40);
-		LinkedList.insertIntoList(30);
-		LinkedList.insertIntoList(20);
-		LinkedList.insertIntoList(10);
+		LinkedList obj=new LinkedList();
+		obj.insertIntoList(obj,60);
+		obj.insertIntoList(obj,50);
+		obj.insertIntoList(obj,40);
+		obj.insertIntoList(obj,30);
+		obj.insertIntoList(obj,20);
+		obj.insertIntoList(obj,10);
 		
 		
 		
@@ -41,8 +42,8 @@ public class DeleteNodesWithGreaterValueOnRight extends LinkedList{
 		//LinkedList.insertIntoList(2);
 		//LinkedList.insertIntoList(3);
 		
-		Node n=DeleteNodesWithGreaterValueOnRight.deleteGreaterOnRight(head);
-		LinkedList.traverseList(n);
+		Node n=DeleteNodesWithGreaterValueOnRight.deleteGreaterOnRight(obj.head);
+		obj.traverseList(n);
 		
 	}
 

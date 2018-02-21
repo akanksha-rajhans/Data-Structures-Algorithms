@@ -75,18 +75,19 @@ public class ReverseSinglyLinkedList extends LinkedList{
 	}
 	
 	public static void main(String[] args) {
-		LinkedList.insertIntoList(1);
-		LinkedList.insertIntoList(2);
-		LinkedList.insertIntoList(3);
-		LinkedList.insertIntoList(4);
-		LinkedList.insertIntoList(5);
-		LinkedList.insertIntoList(6);
-		LinkedList.insertIntoList(7);
+		LinkedList obj=new LinkedList();
+		obj.insertIntoList(obj,1);
+		obj.insertIntoList(obj,2);
+		obj.insertIntoList(obj,3);
+		obj.insertIntoList(obj,4);
+		obj.insertIntoList(obj,5);
+		obj.insertIntoList(obj,6);
+		obj.insertIntoList(obj,7);
 		
 		//Node n=ReverseSinglyLinkedList.reverseList(head);
 		//Node n=ReverseSinglyLinkedList.reverseInSize(head, 5);
-		Node n=ReverseSinglyLinkedList.reverseAltKNodes(2, head);
-		LinkedList.traverseList(n);
+		Node n=ReverseSinglyLinkedList.reverseAltKNodes(2, obj.head);
+		obj.traverseList(n);
 	}
 
 }

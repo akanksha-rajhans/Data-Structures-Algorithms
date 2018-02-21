@@ -12,27 +12,7 @@ public class LinkedList {
 		}
 	}
 	
-	/*public static boolean insertIntoList(int val){
-		LinkedList linkedList=new LinkedList();
-		Node n = new Node(val);
-		if(linkedList.head==null){
-			linkedList.head=n;
-			n.next=null;
-			return true;
-		}
-		else{
-			Node current=linkedList.head;
-			while(current.next!=null){
-				current=current.next;
-			}
-			current.next=n;
-			n.next=null;
-			return true;
-		}
-	}
-	*/
 	public boolean insertIntoList(LinkedList obj,int val){
-		//LinkedList linkedList=new LinkedList();
 		Node n = new Node(val);
 		if(obj.head==null){
 			obj.head=n;
